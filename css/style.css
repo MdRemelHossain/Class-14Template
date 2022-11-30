@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* menu section  */
+.menu{
+    text-align: center;
+    margin: 10px 0px;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #48dbfb;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    z-index: 1;
+}
+.menu ul li a:hover{
+    color: #48dbfb;
+    background-color: rgba(124, 229, 243, 0.301)
+}
+.menu ul li::before{
+    content: "";
+    height: 5%;
+    width: 0;
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    background-color: black;
+    z-index: -1;
+    transition: .5s;
+}
+.menu ul li:hover::before{
+    width: 70%;
+}
+
+/* banner section  */
+.banner{
+    background-color: #48dbfb;
+    color: #fff;
+    padding: 50px 0px;
+    text-align: center;
+}
+.banner p{
+    font-size: 25px;
+}
+.banner h1{
+    font-size: 55px;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+.banner a button{
+    text-decoration: none;
+    background-color: #fff;
+    color: #dddddd;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+.banner a button:hover{
+    color: rgb(255, 255, 255);
+}
+.banner a button::before{
+    font-family: "Font Awesome 5 Brands";
+    content: "\f17b";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.banner a button::after{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    transition: .4s;
+}
+.banner a button:hover::after{
+    width: 100%;
+}
+
+
+/* photography section  */
+.main-p {
+    text-align: center;
+    padding: 70px 0px;
+}
+.main-p .text{
+    padding-bottom: 70px;
+}
+.main-p .all-pic{
+    width: 250px;
+    height: 188px;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+.main-p .all-pic img{
+    max-width: 100%;
+    height: auto;
+}
+.main-p .all-pic img.box{
+    width: 250px;
+    height: 187.5px;
+}
+.main-p .div1 img:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.main-p .div2 img:hover{
+    transform: rotate(60deg);
+    transition: .5s;
+}
+.main-p .div3 img:hover{
+    transform: rotate(-60deg);
+    transition: .5s;
+}
+.main-p .div4 img:hover{
+    transform: rotate(-30deg);
+    transition: .5s;
+}
+.main-p .div5 img:hover{
+    transform: rotate(20deg);
+    transition: .5s;
+}
+.main-p .div6 img:hover{
+    transform: skew(10deg) rotate(360deg);
+    transition: .5s;
+}
+.main-p .div7 img:hover{
+    transform: scale(1.2) rotate(5deg);
+    transition: .5s;
+}
+.main-p .div8 img:hover{
+    transform: scale(1.2) rotate(-5deg);
+    transition: .5s;
+}
+/* content section  */
+.main-text{
+    text-align: center;
+    margin-top: 70px;
+}
+.main-text h1{
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding: 15px;
+}
+.main-text p{
+    color: #989dac;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 0px 125px;
+}
+.main-text .main-step{
+    width: 980px;
+    height: auto;
+    padding: 18px 0px;
+    margin: 0 auto;
+}
+.main-text .main-step .step1{
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    float: left;
+    transform: rotate(-45deg);
+}
+.main-text .main-step .step1:hover{
+    transform: rotate(0deg);
+    background-color: #48dbfb;
+    color: black;
+    font-weight: bold;
+    transition: .5s;
+}
+.main-text .main-step .step2{
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.main-text .main-step .step2:hover{
+    transform: scale(1.2);
+    background-color: #48dbfb;
+    font-weight: bold;
+    transition: .5s;
+}
+.main-text .main-step .step3{
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    float: right;
+    transform: rotate(45deg);
+}
+.main-text .main-step .step3:hover{
+    transform: rotate(0deg);
+    background-color: #48dbfb;
+    color: black;
+    font-weight: bold;
+    transition: .5s;
+}
+/* footer section  */
+footer{
+    background-color: #2e2f31;
+    padding: 30px 0px;
+    color: #fff;
+    text-align: center;
+}
