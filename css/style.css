@@ -38,7 +38,7 @@
     transition: .5s;
 }
 .menu ul li a:hover::before{
-    width: 70%;
+    width: 100%;
 }
 
 /* banner section  */
