@@ -11,6 +11,7 @@
 .menu ul li{
     display: inline-block;
     position: relative;
+    padding: 10px;
 }
 .menu ul li a{
     display: block;
@@ -19,14 +20,13 @@
     background-color: #48dbfb;
     font-weight: bold;
     font-size: 18px;
-    padding: 10px;
     z-index: 1;
 }
 .menu ul li a:hover{
     color: #48dbfb;
     background-color: rgba(124, 229, 243, 0.301)
 }
-.menu ul li::before{
+.menu ul li a::before{
     content: "";
     height: 5%;
     width: 0;
@@ -37,7 +37,7 @@
     z-index: -1;
     transition: .5s;
 }
-.menu ul li:hover::before{
+.menu ul li a:hover::before{
     width: 70%;
 }
 
