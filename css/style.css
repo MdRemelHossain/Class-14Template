@@ -11,7 +11,7 @@
 .menu ul li{
     display: inline-block;
     position: relative;
-    padding: 10px;
+    padding: 10px 15px;
 }
 .menu ul li a{
     display: block;
@@ -32,13 +32,13 @@
     width: 0;
     position: absolute;
     bottom: 25%;
-    left: 15%;
+    left: 0;
     background-color: black;
     z-index: -1;
-    transition: .5s;
+    transition: .9s;
 }
 .menu ul li a:hover::before{
-    width: 120%;
+    width: 100%;
 }
 
 /* banner section  */
