@@ -12,12 +12,12 @@
     display: inline-block;
     position: relative;
     padding: 10px 15px;
+    background-color: #48dbfb;
 }
 .menu ul li a{
     display: block;
     text-decoration: none;
     color: black;
-    background-color: #48dbfb;
     font-weight: bold;
     font-size: 18px;
     z-index: 1;
